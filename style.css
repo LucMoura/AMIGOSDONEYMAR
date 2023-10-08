@@ -1,105 +1,119 @@
-
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.game-board{
-    width: 1364px;
-    height: 651px;
-    border: 1px solid #333;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-
-}
-
-
 body{
-    background-image: url(https://img.freepik.com/vetores-premium/naves-na-superficie-do-planeta-paisagem-espacial-de-pixel-art-de-8-bits-ai-gerou-fundo-da-cena-do-jogo-localizacao-de-paralaxe-interestelar-com-motores-invasores-alienigenas-no-mundo-da-galaxia-distante-com-natureza-caprichosa_8071-54797.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-color: black !important;
+}
+
+.logo{
+    display: flex !important;
+    margin-left: 20px;
+}
+
+.navbar-class{
+    text-transform: uppercase !important;
+    color: yellow !important;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-size: 45px;
+    font-style: italic;
+}
+
+.navbar-name{
+    text-transform: uppercase !important;
+    color: red !important;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    font-style: oblique;
+}
+
+.name{
+    text-transform: uppercase;
+    color: white;
+}
+.navbar{
+    text-align: center !important;
+    display: flex !important;
+}
+
+.nav-link{
+    color: rgb(250, 233, 233) !important;
+    text-decoration: none !important;
+    font-size: 20px !important;
+    justify-content: center;
+    text-align: center;
+    margin-left: 125px;
+}
+
+.nav-link:hover{
+    color: rgb(255, 255, 255) !important;
+}
+
+.carousel img{
+    width: 100%;
+    height: 670px;
+    object-fit: auto;
+}
+
+.info{
+    display: flex;
+    padding-left:  100px !important; 
+    padding-top:  100px;
+    justify-content: space-between !important;
+    padding-bottom:  150px;
+    background-color: white  !important;
     
 }
 
-.meteoro{
-    position:absolute;
-    width: 80px;
-    top: 50px;
-    animation: animação-meteoro 2s infinite linear;
+.info img{
+    width: 500px;
+    height: 300px;
+}
+
+.txt h1{
+    margin-right: 600px;
+    font-style: italic;
 
 }
 
-@keyframes animação-meteoro {
-    from{
-        right: -80px;
-
-    }
-
-    to{
-        right: 100%;
-    }
-    
-}
-
-.nave{
-    height: 75px;
-    width: 90px;
-    transform: scalex(-1);
+.txt p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
     position: absolute;
-    bottom: 50%;
 }
 
-.up{
-    animation: up 1s linear infinite;
+.bg-dark{
+    background-color: black !important;
+
 }
 
-.right{
-    animation: front 0.5s linear infinite;
+.teste {
+    background-color:  #8FA6AC !important;     
+    justify-content: center;
+    display: grid;
+    font-size: 30px;
+    padding: 100px;
 }
 
-.down{
-    animation: down 0.5s linear infinite;
+.teste h1{
+    padding-left: 425px;
 }
 
-.left{
-    animation: back 0.5s linear infinite;
+.imgs{
+    display: flex;
 }
 
-@keyframes up {
-    from{
-        transform: translateY(0) scaleX(-1);
-        
-    }
-    to{
-        transform: translateY(-50px) scaleX(-1);
-    }
+.imgs a img{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    margin-top: 50px;
+    justify-content: space-between !important;
+    padding: 5px;
 }
 
-@keyframes down {
-    from{
-        transform: translateY(0) scaleX(-1);
-    }
-    to{
-        transform: translateY(50px) scaleX(-1);
-    }
+.footer{
+    background-color: black;
+    color: white;
 }
 
-@keyframes right {
-    from{
-        transform: translate(0) scaleX(-1);
-    }
-    to{
-        transform: translateX(50px) scaleX(-1)
-    }
-}
-
-@keyframes left {
-    from{
-        transform: translateX(0) scaleX(-1);
-    }
-    to{
-        transform: translateX(-50px) scaleX(-1);
-    }
+.footer h5{
+    text-align: center;
+    padding: 50px;
 }
