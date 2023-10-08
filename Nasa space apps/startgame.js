@@ -1,3 +1,3 @@
 function Iniciar(){
-    location.href = '';    
+    location.href = 'game.html';    
 }

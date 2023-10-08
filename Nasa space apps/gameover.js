@@ -1,3 +1,3 @@
 function Restart(){
-    location.href = ''
+    location.href = 'start game.html'
 }
